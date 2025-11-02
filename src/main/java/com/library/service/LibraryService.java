@@ -81,6 +81,15 @@ public class LibraryService {
         System.out.println(member.getName() + " returned " + book.getTitle());
     }
 
+    public List<String> filterBooksByAuthor(String author) {
+        return books.entrySet()
+                .stream()
+                .filter(entry -> entry.getValue().getAuthor().startsWith(author))
+                .map(Map.Entry::getKey)
+                .toList();
+    }
+
+
     public void showAllBooks() {
         System.out.println("\n📚 Available Books:");
         for (Book book : books.values()) {
