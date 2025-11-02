@@ -21,9 +21,14 @@ public class Book {
         this.available = available;
     }
 
+    public boolean isByAuthor(String authorName) {
+        return author.toLowerCase().startsWith(authorName.toLowerCase());
+    }
+
+
     @Override
     public String toString() {
-        return "Book Info => Title: " + title + ", Author: " + author;
+        return "[" + title + "] - Author: " + author;
     }
 
 }
