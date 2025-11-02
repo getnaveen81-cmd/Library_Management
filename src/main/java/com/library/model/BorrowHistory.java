@@ -39,12 +39,6 @@ public class BorrowHistory {
 
     @Override
     public String toString() {
-        return "BorrowHistory{" +
-                "transactionId=" + transactionId +
-                ", memberId=" + memberId +
-                ", bookId=" + bookId +
-                ", borrowDate=" + borrowDate +
-                ", returnDate=" + returnDate +
-                '}';
+        return "BorrowHistory{txnId=" + transactionId + ", memberId=" + memberId + ", bookId=" + bookId + ", borrowDate=" + borrowDate + ", returnDate=" + returnDate + '}';
     }
 }
