@@ -18,7 +18,7 @@ public class Member {
     public List<Book> getBorrowedBooks() { return borrowedBooks; }
 
     public void borrowBook(Book book) {
-        System.out.println("Book borrowed by " + name);
+        System.out.println("Borrowed by: " + name);
     }
 
     public void returnBook(Book book) {
