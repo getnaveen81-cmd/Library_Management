@@ -25,6 +25,11 @@ public class Member {
         borrowedBooks.remove(book);
     }
 
+    public void printBorrowedBooks() {
+        System.out.println(name + " currently has " + borrowedBooks.size() + " borrowed books.");
+    }
+
+
     @Override
     public String toString() {
         return "Member{" + "id='" + memberId + '\'' + ", name='" + name + '\'' + ", borrowedBooks=" + borrowedBooks.size() + '}';
