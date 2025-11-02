@@ -38,8 +38,8 @@ public class LibraryService {
     public List<String> filterBooksByAuthor(String author) {
         return books.entrySet()
                 .stream()
-                .filter(entry -> entry.getValue().getAuthor() != null &&
-                        entry.getValue().getAuthor().toLowerCase().contains(author.toLowerCase()))                .map(Map.Entry::getKey)
+                .filter(entry -> entry.getValue().getAuthor().equalsIgnoreCase(author))
+                .map(Map.Entry::getKey)
                 .toList();
     }
 
