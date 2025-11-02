@@ -19,6 +19,13 @@ public class LibraryService {
         System.out.println("New member registered: " + member.getName());
     }
 
+    public void searchBook(String keyword) {
+        books.values().stream()
+                .filter(b -> b.getTitle().toLowerCase().contains(keyword.toLowerCase()))
+                .forEach(System.out::println);
+    }
+
+
     public void borrowBook(String bookId, String memberId) {
         Book book = books.get(bookId);
         Member member = members.get(memberId);
