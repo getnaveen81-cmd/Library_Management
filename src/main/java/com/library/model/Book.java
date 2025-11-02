@@ -23,6 +23,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return "[" + id + "] " + title + " by " + author + (available ? " (Available)" : " (Borrowed)");
+        return "Book Info => Title: " + title + ", Author: " + author;
     }
+
 }
