@@ -35,6 +35,14 @@ public class LibraryService {
                 .collect(Collectors.toList());
     }
 
+
+    public List<Book> sortBooksByAuthor() {
+        return books.values().stream()
+                .sorted(Comparator.comparing(Book::getAuthor))
+                .collect(Collectors.toList());
+    }
+
+
     public void borrowBook(String bookId, String memberId) {
         Book book = books.get(bookId);
         Member member = members.get(memberId);
