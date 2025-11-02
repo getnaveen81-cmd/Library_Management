@@ -23,6 +23,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Book Details [Title: " + title + ", Author: " + author + "]";
+        return "Book Info => Title: " + title + ", Author: " + author;
     }
+
 }
