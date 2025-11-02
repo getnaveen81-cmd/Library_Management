@@ -5,7 +5,7 @@ import java.time.temporal.ChronoUnit;
 
 public class LateFeeCalculator {
 
-    private static final double DAILY_LATE_FEE = 5.0; // ₹5 per day late
+    private static final double DAILY_LATE_FEE = 15.0; // ₹5 per day late
 
     public double calculateLateFee(LocalDate dueDate, LocalDate returnDate) {
         if (returnDate.isBefore(dueDate) || returnDate.isEqual(dueDate)) {
