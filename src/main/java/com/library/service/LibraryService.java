@@ -35,6 +35,15 @@ public class LibraryService {
                 .collect(Collectors.toList());
     }
 
+    public List<String> filterBooksByAuthor(String author) {
+        return books.entrySet()
+                .stream()
+                .filter(entry -> entry.getValue().getAuthor().equalsIgnoreCase(author))
+                .map(Map.Entry::getKey)
+                .toList();
+    }
+
+
 
     public List<Book> sortBooksByAuthor() {
         return books.values().stream()
