@@ -2,6 +2,9 @@ package com.library.service;
 
 import com.library.model.Book;
 import com.library.model.Member;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
 
 import java.util.*;
 
@@ -25,6 +28,12 @@ public class LibraryService {
                 .forEach(System.out::println);
     }
 
+
+    public List<Book> sortBooksByTitle() {
+        return books.values().stream() // <-- use values() to get a Collection<Book>
+                .sorted(Comparator.comparing(Book::getTitle))
+                .collect(Collectors.toList());
+    }
 
     public void borrowBook(String bookId, String memberId) {
         Book book = books.get(bookId);
