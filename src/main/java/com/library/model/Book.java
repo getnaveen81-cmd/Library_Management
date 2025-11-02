@@ -21,9 +21,13 @@ public class Book {
         this.available = available;
     }
 
+    public boolean isByAuthor(String authorName) {
+        return this.author.equalsIgnoreCase(authorName);
+    }
+
     @Override
     public String toString() {
-        return "Book Info => Title: " + title + ", Author: " + author;
+        return "Book Info -> " + title + " by " + author;
     }
 
 }
