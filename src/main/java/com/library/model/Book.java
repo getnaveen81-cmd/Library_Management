@@ -27,6 +27,9 @@ public class Book {
 
     public void myBook(){
         System.out.println("Mindset");
+        System.out.println("commit 1");
+        System.out.println("commit 2");
+        System.out.println("commit 3");
     }
 
 
