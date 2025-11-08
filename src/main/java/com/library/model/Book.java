@@ -27,7 +27,6 @@ public class Book {
 
     public void myBook(){
         System.out.println("Mindset");
-        System.out.println("Atomic Habits");
     }
 
 
