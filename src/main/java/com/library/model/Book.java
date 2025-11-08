@@ -25,6 +25,10 @@ public class Book {
         return author.toLowerCase().startsWith(authorName.toLowerCase());
     }
 
+    public void myBook(){
+        System.out.println("Mindset");
+    }
+
 
     @Override
     public String toString() {
