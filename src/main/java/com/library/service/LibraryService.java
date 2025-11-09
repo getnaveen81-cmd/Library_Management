@@ -99,9 +99,16 @@ public class LibraryService {
     }
 
     public void showMembers() {
-        System.out.println("\n👥 Registered Members:");
+        System.out.println("Registered Members:");
         for (Member m : members.values()) {
             System.out.println(m);
         }
     }
+
+    public void printOverdueBooks() {
+        System.out.println("Overdue Books:");
+        // dummy code for practice
+        System.out.println("Feature in-progress...");
+    }
+
 }
