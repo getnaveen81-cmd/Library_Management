@@ -39,4 +39,8 @@ public class Book {
         return title + " by " + author;
     }
 
+    public void dummy2(){
+        System.out.println("dummy");
+    }
+
 }
