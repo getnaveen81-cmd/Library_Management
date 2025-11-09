@@ -38,4 +38,12 @@ public class Book {
         return "[" + title + "] - Author: " + author;
     }
 
+    public String shortInfo() {
+        return title + " by " + author;
+    }
+
+    public void dummy2(){
+        System.out.println("dummy");
+    }
+
 }
