@@ -99,7 +99,7 @@ public class LibraryService {
     }
 
     public void showMembers() {
-        System.out.println("\n👥 Registered Members:");
+        System.out.println("Registered Members:");
         for (Member m : members.values()) {
             System.out.println(m);
         }
